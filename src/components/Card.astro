@@ -20,14 +20,15 @@ const { title, description, ...props } = data;
       "inline-block text-lg font-medium text-accent",
       "decoration-dashed underline-offset-4 hover:underline",
       "focus-visible:no-underline focus-visible:underline-offset-0",
+      "u-url",
     ]}
   >
-    <Heading
+    <Heading class="p-name"
       style={{ viewTransitionName: slugifyStr(title.replaceAll(".", "-")) }}
     >
       {title}
     </Heading>
   </a>
   <Datetime {...props} />
-  <p>{description}</p>
+  <p class="p-summary">{description}</p>
 </li>

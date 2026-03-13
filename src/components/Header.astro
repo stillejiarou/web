@@ -40,11 +40,12 @@ const isActive = (path: string) => {
       "border-b border-border",
       "relative w-full bg-background",
       "flex items-baseline justify-between sm:items-center",
+      "h-nav",
     ]}
   >
     <a
       href="/"
-      class="absolute py-1 text-xl leading-8 font-semibold whitespace-nowrap sm:static sm:my-auto sm:text-2xl sm:leading-none"
+      class="absolute py-1 text-xl leading-8 font-semibold whitespace-nowrap sm:static sm:my-auto sm:text-2xl sm:leading-none p-name u-url u-uid"
     >
       {SITE.title}
     </a>
@@ -72,17 +73,17 @@ const isActive = (path: string) => {
         ]}
       >
         <li class="col-span-2">
-          <a href="/posts" class:list={{ "active-nav": isActive("/posts") }}>
+          <a href="/posts" class:list={{ "active-nav u-url": isActive("/posts") }}>
             Posts
           </a>
         </li>
         <li class="col-span-2">
-          <a href="/tags" class:list={{ "active-nav": isActive("/tags") }}>
+          <a href="/tags" class:list={{ "active-nav u-url": isActive("/tags") }}>
             Tags
           </a>
         </li>
         <li class="col-span-2">
-          <a href="/about" class:list={{ "active-nav": isActive("/about") }}>
+          <a href="/about" class:list={{ "active-nav u-url": isActive("/about") }}>
             About
           </a>
         </li>
@@ -92,7 +93,7 @@ const isActive = (path: string) => {
               <LinkButton
                 href="/archives"
                 class:list={[
-                  "focus-outline flex justify-center p-3 sm:p-1",
+                  "focus-outline flex justify-center p-3 sm:p-1 u-url",
                   {
                     "active-nav [&>svg]:stroke-accent": isActive("/archives"),
                   },
@@ -110,7 +111,7 @@ const isActive = (path: string) => {
           <LinkButton
             href="/search"
             class:list={[
-              "focus-outline flex p-3 sm:p-1",
+              "focus-outline flex p-3 sm:p-1 u-url",
               { "[&>svg]:stroke-accent": isActive("/search") },
             ]}
             title="Search"

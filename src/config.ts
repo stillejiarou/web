@@ -1,7 +1,7 @@
 export const SITE = {
-  website: "https://astro-paper.pages.dev/", // replace this with your deployed domain
+  website: "https://PLACEHOLDER", // replace this with your deployed domain
   author: "Jia-Rou Stille",
-  profile: "https://satnaing.dev/",
+  profile: "https://PLACEHOLDER",
   desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
   title: "StilleJiaRou",
   ogImage: "astropaper-og.jpg",
@@ -14,10 +14,16 @@ export const SITE = {
   editPost: {
     enabled: true,
     text: "Edit page",
-    url: "https://github.com/satnaing/astro-paper/edit/main/",
+    url: "https://PLACEHOLDER",
   },
   dynamicOgImage: true,
   dir: "ltr", // "rtl" | "auto"
   lang: "en", // html lang code. Set this empty and default will be "en"
   timezone: "Asia/Bangkok", // Default global timezone (IANA format) https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  meLinks: [
+    "https://PLACEHOLDER.PLACEHOLDER",
+    "https://neocities.site/PLACEHOLDER",
+    "https://github.com/PLACEHOLDER",
+    "mailto:PLACEHOLDER@PLACEHOLDER.com"
+  ]
 } as const;
