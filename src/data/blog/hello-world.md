@@ -5,8 +5,8 @@ featured: false
 draft: false
 tags:
   - devlog
-description:
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-  incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel
-  fringilla est
+  - thought
+description: Hello Astro! Developing is going alright so far :)
+hideEditPost: true
 ---
+Templates are awesome and all but I kinda like making my own stuff more... Although, being able to just write is also awesome, great for when I just wanna take some quick notes or so.
